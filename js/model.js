@@ -21,7 +21,7 @@ export let maxDays = infections["Aeropuerto"].length - 1; // the length of any d
                                                           // they all have the same number of days
 
 export function sum(dailyCases, currentDay) {
-    let total =0;
+    let total = 0;
     for (let district in dailyCases) {
         total += dailyCases[district][currentDay];
     }
