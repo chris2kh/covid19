@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>COVID-19 in Pereira</title>
+    <meta charset="utf-8"/>
+    
+    <link rel="stylesheet" href="css/index.css">    
+    <link rel="stylesheet" href="css/leaflet.css">    
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <script src="js/controller.js" type="module"></script>
+    </script>
+</head>
+
+<html>
+    <body>
+        <div id="divTitle">          
+            <label id="title">COVID-19 in Pereira</label>
+            <label id="dayNumber"></label>
+            <label id="total"></label>
+        </div>
+
+        <div id="divCategory">        
+            <label id="labelCategory" for="category">Select a category:</label>
+            <select  autocomplete="off" id="category">
+                <option value="infections">Infections</option>
+                <option value="ICU patients">ICU patients</option>
+            </select> 
+        </div>
+        <div id="map"></div>
+        <div id ="buttons">
+            <button id="back">back</button>
+            <button id="next">next</button>
+        </div>
+    </body>
+</html>
