@@ -50,7 +50,7 @@ function update(currentDay) {
 map.draw(myCity, threshold);
 map.drawInfoPanel();
 map.drawLegend();
-update(0) // start at day 0
+update(currentDay) // start
 
 document.getElementById("category").addEventListener('change', changeCategory, false);
 document.getElementById("back").addEventListener('click', back, false);
