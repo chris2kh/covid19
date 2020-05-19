@@ -41,7 +41,7 @@ function setCases(currentDay) {
 
 function update(currentDay) {
     setCases(currentDay);
-    let total = Math.round(model.sum(dailyData,currentDay));
+    let total = Math.round(model.sum(dailyData, currentDay));
     document.getElementById("total").innerText = total + "  " + document.getElementById("category").value
     document.getElementById("dayNumber").innerText = "day  " + (currentDay + 1);
     map.update();
