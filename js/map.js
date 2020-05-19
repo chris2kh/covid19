@@ -69,8 +69,7 @@ export function setThreshold(newThreshold) {
     threshold = newThreshold;
 }
 
-export function changeLegend(newThreshold) {
-    // threshold = newThreshold;
+export function changeLegend() {
     legend.addTo(map);
 }
 
